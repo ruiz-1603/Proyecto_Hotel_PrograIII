@@ -1,5 +1,3 @@
-package org.example.hotelmanager;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 

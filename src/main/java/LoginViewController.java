@@ -1,4 +1,3 @@
-package org.example.hotelmanager;
 import javafx.fxml.FXML;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -75,11 +74,4 @@ public class LoginViewController {
             alert.showAndWait();                //pone un boton de aceptar en la pantalla despues del error
         }
     }
-
-
-
-
-
-
-
 }

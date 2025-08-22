@@ -1,4 +1,7 @@
 package Backend;
 
-public class ServiciosGenerales {
+public class ServiciosGenerales extends Funcionario {
+    String turno;
+    // String pisoAsignado
+
 }
