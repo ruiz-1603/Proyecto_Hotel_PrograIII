@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+    <!-- Panel izquierdo con color de fondo azul -->
+    <left>
+        <Pane prefWidth="250" prefHeight="400" style="-fx-background-color: #0b3d91;"/>
+    </left>
+
+    <!-- Panel derecho con formulario -->
+    <center>
+        <VBox alignment="CENTER" spacing="20" prefWidth="350" style="-fx-background-color: #4d4d4d;" >
+            <!-- Título -->
+            <Label text="Ingresar">
+                <font>
+                    <Font name="System Bold" size="28"/>
+                </font>
+            </Label>
+
+            <!-- Usuario -->
+            <VBox spacing="5" alignment="CENTER_LEFT" padding="Insets(0,40,0,40)">
+                <Label text="Usuario:" textFill="white" />
+                <TextField prefWidth="250"/>
+            </VBox>
+
+            <!-- Contraseña -->
+            <VBox spacing="5" alignment="CENTER_LEFT" padding="Insets(0,40,0,40)">
+                <Label text="Contraseña:" textFill="white"/>
+                <PasswordField prefWidth="250"/>
+            </VBox>
+
+            <!-- Botones -->
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Iniciar Sesion" prefWidth="120" style="-fx-background-color: #29a9ff; -fx-text-fill: white; -fx-font-weight: bold;"/>
+                <Button text="Salir" prefWidth="100" style="-fx-background-color: #b3b3b3;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

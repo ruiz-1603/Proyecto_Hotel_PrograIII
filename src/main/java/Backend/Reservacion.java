@@ -1,7 +1,5 @@
 package Backend;
 
-import org.example.hotelmanager.Cliente;
-
 import java.time.LocalDate;
 
 public class Reservacion {
@@ -36,7 +34,7 @@ public class Reservacion {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(Cliente cliente, boolean editar) {
         this.cliente = cliente;
     }
 

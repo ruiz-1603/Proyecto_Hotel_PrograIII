@@ -1,4 +1,4 @@
-package org.example.hotelmanager;
+package Backend;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -17,6 +17,16 @@ public class Cliente {
     private String segundoApellido;
     private LocalDate fechaNacimiento;
     private int edad;
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    private String nombreCompleto;
 
     public int getIdCliente() {
         return idCliente;
@@ -93,5 +103,6 @@ public class Cliente {
         this.segundoApellido = segundoApellido;
         this.fechaNacimiento = fechaNacimiento;
         this.edad = edad;
+        this.nombreCompleto = nombre+" "+primerApellido+" "+segundoApellido;
     }
 }

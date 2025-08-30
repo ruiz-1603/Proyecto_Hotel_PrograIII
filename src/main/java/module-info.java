@@ -4,4 +4,6 @@ module org.example.hotelmanager {
 
     opens org.example.hotelmanager to javafx.fxml;
     exports org.example.hotelmanager;
+    exports Backend;
+    opens Backend to javafx.fxml;
 }
